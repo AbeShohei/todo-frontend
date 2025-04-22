@@ -1,5 +1,5 @@
 // src/App.tsx
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios"; // axiosをインポート
 import { Todo } from "./types/Todo"; // 型定義をインポート
 import TodoList from "./components/TodoList"; // 拡張子を省略してインポート
