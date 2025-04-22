@@ -7,7 +7,10 @@ import TodoForm from "./components/TodoForm";
 
 // Spring Boot APIのエンドポイントURL (環境変数にするのが望ましいが、まずは直接記述)
 // Docker Composeを使う場合は 'http://localhost:8080/api/todos' で良いことが多い
-const API_URL = "http://localhost:8080/api/todos";
+// const API_URL = "http://localhost:8080/api/todos";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL  || 'http://localhost:8080/api';
+const API_URL = `${API_BASE_URL}/api/todos`;
+
 
 function App() {
   // ToDoリストの状態を管理するためのstate (初期値は空の配列)
