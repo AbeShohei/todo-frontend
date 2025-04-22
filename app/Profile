@@ -1,0 +1,2 @@
+# Procfile (フロントエンド用 - Web Serviceの場合)
+web: npm run start
